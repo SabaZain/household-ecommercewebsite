@@ -45,14 +45,17 @@ const handleTab = (index: number) => {
 
       <ul className='flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center pt-8 uppercase
       font-medium text-[20px]'>
-        {tabsData.map((text, index) => (<li key={text} 
-        className={' ${selectedTab === index && "text-accent} cursor-pointer hover:text-accent'}
+        {tabsData.map((text, index) => (
+      <li 
+        key={text} 
+        className={`${
+        selectedTab === index ? "text-accent" : "" 
+        } cursor-pointer hover:text-accent`}
         
         onClick={() => handleTab(index)}
-        
         >
-            {text}
-        </li>
+        {text}
+      </li>
     ))}
       </ul>
 
