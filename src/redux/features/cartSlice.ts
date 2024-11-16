@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Interface } from "readline/promises";
 
 interface IProduct{
     id: number;
