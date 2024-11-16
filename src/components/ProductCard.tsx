@@ -13,11 +13,11 @@ export interface IProduct {
   img: string;
   name: string;
   price: number;
-  category: string;
+  
   
 }
 
-const ProductCard = ({id, img, name, price, category}: IProduct) => {
+const ProductCard = ({id, img, name, price}: IProduct) => {
 
   const router = useRouter();
   const dispatch = useAppDispatch()
