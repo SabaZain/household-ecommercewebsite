@@ -1,20 +1,31 @@
-
 import { useAppSelector } from "@/redux/hooks";
 import { RxCross1 } from "react-icons/rx";
 import CartProduct from "./CartProduct";
+import {Dispatch, SetStateAction} from "react";
 
+interface CartProductType{
+    id:number;
+    img:string;
+    name:string;
+    price:number;
+    quantity:number;
+}
 
+interface CartProps {
+    setShowCart: Dispatch<SetStateAction<boolean>>;
+}
 
-const Cart = ({ setShowCart}:any) => {
+const Cart = ({ setShowCart}:CartProps) => {
     const products = useAppSelector((state) => state.cartReducer);
-
-    const getTotal = () => {
+    
+ const getTotal = () => {
         let total = 0;
-        products.forEach((item) => (total = total + item.price * item.quantity));
-        return total;
-
-       
+        products.forEach((item) => {
+            total += item.price * item.quantity;
+    });
+    return total;
     };
+    
     return(
         <div className="w-full min-h-screen fixed left-0 top-0 z-20 overflow-y-scroll">
             <div className="max-w-[400px] w-full min-h-full bg-white absolute right-0 top-0 p-6">
@@ -27,7 +38,7 @@ const Cart = ({ setShowCart}:any) => {
                 </h3>
 
                 <div className="mt-6 space-y-2">
-                 {products?.map((item:any) => (
+                 {products?.map((item:CartProductType) => (
                     <CartProduct
                     key={item.id}
                     id={item.id}
