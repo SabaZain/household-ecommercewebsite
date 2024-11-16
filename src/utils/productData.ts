@@ -1,4 +1,4 @@
-export default[
+const productData = [
     {
         id: 0,
         img: "/Image/kitchenbeater.jpg",
@@ -155,4 +155,6 @@ export default[
         category: ["HOME DECOR"],
     },
     
-]
+];
+
+export default productData;
