@@ -4,28 +4,25 @@ import Data from "@/utils/productData"
 import ProductCard from './ProductCard';
 import { IProduct } from "./ProductCard";
 
-
-
-const tabsData = ["ALL", "KITCHEN UTENSILS", "KIDS COLLECTION", "HOME DECOR"]
+const tabsData: string[] = ["ALL", "KITCHEN UTENSILS", "KIDS COLLECTION", "HOME DECOR"];
 
 const NewArrival = () => {
 
-const [selectedTab, setSelectedTab] = useState(0);
-const [data, setData] = useState([]);
+const [selectedTab, setSelectedTab] = useState<number>(0);
+const [data, setData] = useState<IProduct[]>([]);
 
-const shuffleArray = (array: any) => {
+const shuffleArray = (array: IProduct[]) => {
   console.log("shuffleArray");
 
   return array
-    .map((value:any) => ({value, sort: Math.random()}))
-    .sort((a: any, b: any) => a.sort - b.sort )
-    .map(({value} : any) => value);
+    .map((value) => ({value, sort: Math.random()}))
+    .sort((a, b) => a.sort - b.sort )
+    .map(({value}) => value);
 };
 
 useEffect(() => {
   setData(shuffleArray(Data).slice(0, 8));
-}, [])
-
+}, []);
 
 const handleTab = (index: number) => {
     const category = tabsData[index].toUpperCase()
@@ -33,16 +30,14 @@ const handleTab = (index: number) => {
 
     if(category === "ALL"){
       setData(shuffleArray(Data).slice(0, 22)); 
-      return
+      return;
     }
 
     const filterData = Data.filter((item) => item.category.includes(category));
-    setData(shuffleArray(filterData))
+    setData(shuffleArray(filterData));
 };
 
-
-
-  return (
+ return (
     <div className='bg-[#C39989] pt-20'>
       <div className='text-center'>
       <h1 className='font-bold text-3xl'>New Arrival</h1>
