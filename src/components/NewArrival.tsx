@@ -69,7 +69,7 @@ const handleTab = (index: number) => {
         img={item.img} 
         name={item.name}
         price={item.price}
-        category={item.category}
+        
         />
         ))}
       </div>
