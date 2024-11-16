@@ -1,13 +1,16 @@
-
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { useAppSelector } from '@/redux/hooks';
+import {Dispatch, SetStateAction} from "react";
 
+interface NavbarProps {
+  setShowCart: Dispatch<SetStateAction<boolean>>
+}
 
-const Navbar = ({setShowCart}:any) => {
+const Navbar = ({setShowCart}:NavbarProps) => {
   const cartCount = useAppSelector((state) => state.cartReducer.length);
 
 return (
