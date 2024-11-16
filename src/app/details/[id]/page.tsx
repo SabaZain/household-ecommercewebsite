@@ -6,7 +6,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { FaRegStar } from "react-icons/fa";
 import { BsFillStarFill } from "react-icons/bs";
-import { FaShoppingCart } from "react-icons/fa";
 import { IoIosHeart } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
