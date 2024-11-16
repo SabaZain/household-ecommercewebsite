@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 interface propsType {
   img: string;
@@ -9,7 +10,7 @@ interface propsType {
 const BlogCard = ({img, title, date}: propsType) => {
   return (
     <div className='space-y-1'>
-      <img
+      <Image
        className='rounded-lg hover:scale-105 transition-transform'
        src={img}
        alt="post"
