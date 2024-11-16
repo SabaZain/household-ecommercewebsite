@@ -96,7 +96,7 @@ const DetailPage = () => {
            </div>
            <div className='flex gap-1 items-center'>
             Tags: {" "}
-            {productData?.category.map((item: any) => (
+            {productData?.category.map((item: string) => (
               <div key={item}>{item}</div>
             ))}
            </div>
