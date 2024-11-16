@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Provider } from "react-redux";
-import { Children, useState } from "react";
+import { useState } from "react";
 import Cart from "@/components/Cart";
 import { store } from "@/redux/store";
 
