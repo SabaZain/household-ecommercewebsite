@@ -14,6 +14,8 @@ const BlogCard = ({img, title, date}: propsType) => {
        className='rounded-lg hover:scale-105 transition-transform'
        src={img}
        alt="post"
+       width={300}
+       height={300}
        />
        <div className='text-orange-500 text-center font-medium'>
        <span>{date}</span>
