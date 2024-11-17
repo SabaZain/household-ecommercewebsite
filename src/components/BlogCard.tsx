@@ -25,4 +25,4 @@ const BlogCard = ({img, title, date}: propsType) => {
   );
 };
 
-export default BlogCard
+export default BlogCard;
