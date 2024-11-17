@@ -43,7 +43,7 @@ const DetailPage = () => {
     return (
     <div>
       <div className='bg-gray-100 py-4'>
-        <div className='container flex gap-4 pl-12 items-center text-gray-500'>
+        <div className='container flex gap-4 pl-11 items-center text-gray-500'>
             <Link href="/" className="cursor-pointer hover:text-accent">
             Home
             </Link>
@@ -55,7 +55,7 @@ const DetailPage = () => {
           </div>
         </div>
 
-       <div className='container pl-3 p-1'>
+       <div className='container pl-2 p-1'>
         <div className='grid md:grid-cols-2 gap-16'>
            <div>
              <Image 
