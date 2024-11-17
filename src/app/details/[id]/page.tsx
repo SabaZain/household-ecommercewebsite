@@ -55,7 +55,7 @@ const DetailPage = () => {
           </div>
         </div>
 
-       <div className='container pl-4 p-1'>
+       <div className='container pl-3 p-1'>
         <div className='grid md:grid-cols-2 gap-16'>
            <div>
              <Image 
