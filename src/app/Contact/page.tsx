@@ -52,7 +52,7 @@ const ContactPage = () => {
           <div> <FaSquarePhone size={30} color='red'/>0332-3319007</div>
           </div>
           <form onSubmit={handleSubmit} className='w-full max-w-xl'>
-              <div className='flex flex-col gap-1 ml-14'>
+              <div className='flex flex-col gap-1 ml-10'>
               <label htmlFor='name'>Name</label>
               <input 
               type='text'
@@ -63,7 +63,7 @@ const ContactPage = () => {
               required
               />
             </div>
-            <div className='flex flex-col gap-1 ml-14'>
+            <div className='flex flex-col gap-1 ml-10'>
             <label htmlFor='email'>Email</label>
               <input 
               type='email'
@@ -74,7 +74,7 @@ const ContactPage = () => {
               required
               />
             </div>
-            <div className='flex flex-col gap-1 ml-14'>
+            <div className='flex flex-col gap-1 ml-10'>
             <label htmlFor='msg'>Message</label>
             <textarea
             className='h-[150px] w-[350px] bg-gray-400 border border-black rounded-md p-1' 
@@ -87,14 +87,14 @@ const ContactPage = () => {
             </div>
             <button 
             type="submit" 
-            className='bg-green-800 hover:bg-green-500 text-black hover:text-white text-xl ml-14 p-2 mt-2 border rounded-md cursor-pointer'
+            className='bg-green-800 hover:bg-green-500 text-black hover:text-white text-xl ml-10 p-2 mt-2 border rounded-md cursor-pointer'
             >
             Submit
             </button>
             </form>
 
             {isSubmitted && (
-              <div className='mt-4 text-center text-sm font-semibold text-green-800 font-serif'>
+              <div className='mt-4 text-center text-green-800 font-serif'>
                 Thankyou for contacting us! We will get back to you soon.
                 </div>
             )}
