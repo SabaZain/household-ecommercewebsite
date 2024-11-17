@@ -95,7 +95,7 @@ const ContactPage = () => {
 
             {isSubmitted && (
               <div className='mt-4 text-center text-green-800 font-serif'>
-                Thankyou for contacting us! We will get back to you soon.
+                Thankyou for contacting us! <br />We will get back to you soon.
                 </div>
             )}
            </div>
