@@ -10,7 +10,7 @@ const ShopNowPage = () => {
       className="mt-16 ml-10 mr-10 border border-black hover:translate-x-2" />
       <Image src="/Image/camerabottleyg.jpg" alt="camera bottle" width={300} height={300} 
       className="mt-16 ml-10 mr-10 border border-black hover:translate-x-2"/>
-      <Image src="/Image/camerabottlepg.jpg" alt="camera bottle" width={350} height={350} 
+      <Image src="/Image/camerabottlepg.jpg" alt="camera bottle" width={300} height={300} 
       className="mt-16 ml-10 mr-10 border border-black hover:translate-x-2"/>
       </div>
       </div>
