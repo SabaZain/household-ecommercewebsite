@@ -17,7 +17,7 @@ const BlogCard = ({img, title, date}: propsType) => {
        width={400}
        height={400}
        />
-       <div className='text-orange-500 text-[10px] text-center font-medium'>
+       <div className='text-orange-500 text-[12px] text-center font-medium'>
        <span>{date}</span>
        </div>
        <h3 className='font-thin font-serif text-center text-[20px] hover:text-orange-600'>{title}</h3>
