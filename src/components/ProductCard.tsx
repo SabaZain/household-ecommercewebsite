@@ -134,7 +134,7 @@ return (
           <IoIosHeart />
           </div>
 
-          <div className='bg-white w-[50px] h-[50px] text-[26px] font-serif grid place-items-center'
+          <div className='bg-white w-[50px] h-[50px] text-[26px] font-serif grid place-items-center cursor-pointer'
           onClick={addProductToCart}>
           <FaShoppingCart/>
           </div>
