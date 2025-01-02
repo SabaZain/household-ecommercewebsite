@@ -28,7 +28,7 @@ const BlogSection = () => {
       <h2 className='font-bold text-center text-3xl'>Latest News</h2>
       <p className='text-gray-600 text-center text-2xl'>(Blogs)
       </p>
-      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-36 pt-8 w-auto h-auto'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-36 mx-3 pt-8 w-auto h-auto'>
         {data.map(item => <BlogCard key={item.date} img={item.img} title={item.title} 
         date={item.date}/>)}
       </div>
